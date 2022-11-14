@@ -1,0 +1,31 @@
+{
+  "name": "poco",
+  "version": "0.0.3",
+  "scripts": {
+    "prepare": "echo 'stop' && husky install",
+    "hook": "pnpm exec husky add .husky/commit-msg 'pnpm exec commitlint --edit $1'",
+    "changelog": "pnpm exec conventional-changelog -p angular -i CHANGELOG.md -s",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cz-commitlint": "^17.1.2",
+    "@commitlint/format": "^17.0.0",
+    "@commitlint/prompt-cli": "^17.1.2",
+    "@commitlint/types": "^17.0.0",
+    "@types/node": "^18.7.23",
+    "commitizen": "^4.2.5",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "inquirer": "8",
+    "typescript": "^4.6.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}

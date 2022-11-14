@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "lib": []
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "test/**/*.spec.ts"],
+  "extends": "../tsconfig.base.json"
+}

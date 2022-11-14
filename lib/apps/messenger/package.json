@@ -1,0 +1,27 @@
+{
+  "name": "@poco/messenger",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "serve": "pnpm exec nodemon",
+    "build": "rollup --config rollup.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.7.18",
+    "express": "^4.18.1",
+    "socket.io": "^4.5.2"
+  },
+  "devDependencies": {
+    "@poco/net": "workspace: *",
+    "@types/express": "^4.17.14",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}

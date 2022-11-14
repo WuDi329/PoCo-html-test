@@ -1,0 +1,31 @@
+{
+  "name": "@poco/util",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "rollup --config rollup.config.ts --watch",
+    "build": "rollup --config rollup.config.ts",
+    "test": "pnpm exec ts-mocha --type-check",
+    "postinstall": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.0.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "fast-deep-equal": "^3.1.3"
+  }
+}

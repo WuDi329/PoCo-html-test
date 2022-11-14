@@ -1,0 +1,8 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+      "lib": ["webworker", "ESNext"],
+      "rootDir": "../../src" /* Specify the root folder within your source files. */,
+  },
+  "includes": ["."]
+}
